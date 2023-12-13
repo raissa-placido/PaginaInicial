@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>Página Inicial - Lab. Virtual de Microscopia</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" href="css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+      
+      <!-- Icone sol lua -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"/>
+      
+      <!-- Logo do site -->
+      <link rel="icon" type="image/png" href="./images/logotcc.png">
+<!--botão flutuante-->
+      <style>
+         #scroll-to-top-btn {
+            font-size: 15px;
+             position: fixed;
+             bottom: 20px;
+             right: 20px;
+             background-color: #fc4311;
+             color: #fff;
+             border: none;
+             border-radius: 1000px;
+             padding: 10px 20px;
+             cursor: pointer;
+             display: none;
+             
+         }
+     </style>
+     <script>
+         window.onscroll = function() {
+             scrollFunction();
+         };
+ 
+         function scrollFunction() {
+             var btn = document.getElementById("scroll-to-top-btn");
+             if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                 btn.style.display = "block";
+             } else {
+                 btn.style.display = "none";
+             }
+         }
+ 
+         function scrollToTop() {
+             document.body.scrollTop = 0;
+             document.documentElement.scrollTop = 0;
+         }
+     </script>
+   </head>
+   <!-- body -->
+   <body class="main-layout">
+      <!-- loader  -->
+      <div class="loader_bg">
+         <div class="loader"><img src="images/loading-gif-transparent-10.gif" alt="#" /></div>
+      </div>
+      <!-- end loader --> 
+       <!-- botão flutuante que vai pro topo -->
+    <button id="scroll-to-top-btn" onclick="scrollToTop()"><img src="icon/seta2.png"></button>
+      <!-- header -->
+      <header>
+          <div>
+
+          </div>
+          
+          <div>
+
+          </div>
+         <!-- header inner -->
+         <div class="header">
+         <div class="container">
+            <div class="row">
+               <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                  
+                  <div class="full">
+                     <div class="center-desk">
+                        
+
+                        <div class="logo"> <a href="index.html">Lab. Virtual de Microscopia</a> </div>
+                     </div>
+                  </div>
+               </div>
+               
+               <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                  <div class="menu-area">
+                     
+                     <div class="limit-box">
+                        
+                        <nav class="main-menu">
+                           <ul class="menu-area-main">
+                              <li class="active"> <a href="index.html">Início</a> </li>
+                              <li> <a href="#about">Dados Epidemiológicos</a> </li>
+                              <li> <a href="#service">Laboratório Virtual</a> </li>
+                              <li> <a href="#screenshot">Informativo sobre Doenças</a> </li>
+                              <li> <a href="#blog">Microscópio Óptico</a> </li>
+                              <li><button type="button" id="btnAumentar">A+</button></li>
+                              <li><button type="button" id="btnDiminuir">A-</button></li>
+                              <li>            <input type="checkbox" name="change-theme" id="change-theme" />
+                                 <label for="change-theme">
+                                   <i class="bi bi-sun"></i>
+                                   <i class="bi bi-moon"></i>
+                                 </label>
+                              </li>
+                           </ul>
+                        </nav>
+                  </div>
+               </div>
+            </div>
+         </div>
+         
+         <!-- end header inner --> 
+      </header>
+      <!-- end header -->
+      
+
+<!-- LIBRAS -->
+  <div vw class="enabled">
+   <div vw-access-button class="active"></div>
+   <div vw-plugin-wrapper>
+     <div class="vw-plugin-top-wrapper"></div>
+   </div>
+ </div>
+ <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+ <script>
+   new window.VLibras.Widget('https://vlibras.gov.br/app');
+ </script>
+
+      <section class="slider_section">
+         <div id="myCarousel" class="carousel slide banner-main" data-ride="carousel">
+            <div class="carousel-inner">
+               <div class="carousel-item active">
+                  <img class="first-slide" src="images/culexlarva20230623_084954_001_1_.gif" alt="First slide">
+                  <div class="container">
+                     <div class="carousel-caption relative">
+                        <h1>Informativo sobre Doenças</h1>
+                        <p> Conheça mais sobre os agentes causadores de diversas doenças nesta página. Aqui, serão abordadas informações sobre parasitoses, 
+                           incluindo detalhes sobre seus vetores e outros aspectos relevantes clicando no botão abaixo.
+                            </p>
+                        <a  href="HomepageDoenças/homepage.html">Acesse aqui</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="carousel-item">
+                  <img class="second-slide" src="images/ascarisfemea20230623_091138_001_1_.gif" alt="Second slide">
+                  <div class="container">
+                     <div class="carousel-caption relative">
+                        <h1>Nosso Microscópio Virtual</h1>
+                        <p> Esta página é um acervo das amostras de lâminas do laboratório de biologia do IFRN Campus Parnamirim.
+                           Conheça mais sobre esse projeto clicando no botão abaixo
+                            </p>
+                        <a  href="HomePageMicroscopia/index-mv.html">Acesse aqui</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="carousel-item">
+                  <img class="third-slide" src="images/anopheles20230623_092518_001_1_.gif" alt="Third slide">
+                  <div class="container">
+                     <div class="carousel-caption relative">
+                        <h1>Dados Epidemiológicos</h1>
+                        <p>
+                           Esta página apresenta uma pesquisa consolidada das incidências de doenças, 
+                           como verminoses, bacterioses e parasitoses, categorizadas por regiões do Brasil.
+                        </p>
+                        <a  href="Javascript:void(0)">Acesse aqui</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="carousel-item">
+                  <img class="second-slide" src="images/2ovos20230623_090953_001_1_.gif" alt="Second slide">
+                  <div class="container">
+                     <div class="carousel-caption relative">
+                        <h1>Conheça as partes de um microscópio!</h1>
+                        <p>
+                           Curioso(a) para saber como funciona cada parte de um microscópio óptico? Então clique no botão abaixo! </p>
+                        <a  href="#blog">Acesse aqui</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+            <i class='fa fa-angle-left'></i>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+            <i class='fa fa-angle-right'></i>
+            </a>
+            <a class="bottom_arrow_scroll" href="#about"><img src="icon/errow.png" /></a>
+         </div>
+      </section>
+<!-- about  -->
+      <div id="about" class="about">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2>Conheça o nosso projeto!</h2>
+                     <span>
+                     <b>Bem vindo(a) à nossa página inicial!</b> Nosso projeto engloba a área da informação sobre doenças causadas por vetores como
+                     parasitas, bactérias e insetos, como o mosquito. Com isso, temos páginas onde você pode explorar as estimativas de algumas 
+                     doenças em cada região brasileira, se informar sobre esses vetores, e principalmente dar uma olhada nas imagens digitais adquiridas
+                     por microscópio do acervo de amostras do <b>IFRN - Campus Parnamirim</b>.
+                     </span>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="container-fluid">
+            <div class="row flexcss">
+               <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                  <div class="about-box">
+                     <h3>Dados Epidemiológicos</h3>
+                     <p>
+                        Atualmente, saber as estatísticas das doenças que afetam o país é essencial para compreender se as ações preventivas realizadas no passado tiveram resultados eficazes. 
+                        Por isso, fizemos uma página somente destinada para a divulgação desses dados e 
+                        como algumas doenças se distribuem pelos estados brasileiros. Nossos gráficos oferecem um quadro 
+                        das doenças mencionadas na página dos vetores com as últimas pesquisas divulgadas pelo Governo Federal.
+
+                     </p>
+                     
+                  </div>
+               </div>
+               <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                   <div class="about-img">
+
+                     <figure><img src="images/mapatrans.png" alt="img"/></figure>
+                     
+                  </div>
+                 
+               </div>
+            </div>
+            <a href="Javascript:void(0)">ACESSE AQUI</a>
+         </div>
+      </div>
+      <!-- end abouts -->
+      
+<!-- Download -->
+      <div id="screenshot" class="Screenshot">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2>Informativo sobre Doenças</h2>
+                     <span>
+                     Informar-se sobre as doenças é sempre bom para prevení-las, pensando nisso essa página mostra quais são os vetores 
+                     responsáveis por transmitir doenças como dengue, doença-de-chargas, malária, barriga-d'água e entre outras.   
+                     </span>
+                  </div>
+               </div>
+            </div>
+            <div class="read-more">
+               <a href="HomepageDoenças/homepage.html">ACESSE AQUI</a>
+               <br>
+            </div>
+            <div class="row">
+               <div class="col-md-12">
+                  <div id="main_slider" class="carousel slide banner-main" data-ride="carousel">
+                     <div class="carousel-inner">
+                        <div class="carousel-item active"> <img class="first-slide" src="images/culexfemea20230623_085342_001_1_.gif" alt="First slide"> </div>
+                        <div class="carousel-item"> <img class="second-slide" src="images/larvaanopheles20230623_092134_001_1_.gif" alt="Second slide"> </div>
+                        <div class="carousel-item"> <img class="third-slide" src="images/ascarismacho20230623_090528_001_001_1_.gif" alt="Third slide"> </div>
+                     </div>
+                     <a class="carousel-control-prev" href="#main_slider" role="button" data-slide="prev"> <i class='fa fa-angle-left'></i></a> <a class="carousel-control-next" href="#main_slider" role="button" data-slide="next"> <i class='fa fa-angle-right'></i></a> 
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end Download -->
+      
+<!-- service --> 
+      <div id="service" class="service">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2>Laboratório Virtual</h2>
+                     <span>Abaixo é possível ver imagens de algumas das amostras que você poderá ver na nossa página do microscópio.
+                        Lá  você poderá, além de ver o amplo catálogo de amostras de vetores e doenças que o <b>laboratório de biologia do IFRN - Campus Parnamirim</b> possui, 
+                        você terá uma experiência <b>única</b> de microscópio virtual, incluindo imagens com até
+                        <b>40x</b> na lente de aumento! Curioso(a)?
+                     </span>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="container margin-r-l">
+            <div class="row">
+               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 thumb">
+                  <div class="service-box">
+                     <figure>
+                        <img  src="images/ascarismacho4xp.jpg" class="zoom img-fluid "  alt="">
+                        <span class="hoverle">
+                        <a href="images/ascarismacho4xp.jpg" class="fancybox" rel="ligthbox">Ascaris Macho C.S 4x</a>
+                        </span>  
+                     </figure>
+                  </div>
+               </div>
+               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 thumb">
+                  <div class="service-box">
+                     <figure>
+                        <img  src="images/Anopheles4xp.jpg" class="zoom img-fluid "  alt="">
+                        <span class="hoverle">
+                        <a href="images/Anopheles4xp.jpg" class="fancybox" rel="ligthbox">Anopheles W.M 4x</a>
+                        </span>
+                     </figure>
+                  </div>
+               </div>
+               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 thumb">
+                  <div class="service-box">
+                     <figure>
+                        <img  src="images/Cisticercoescolex10xp.jpg" class="zoom img-fluid "  alt="">
+                        <span class="hoverle">
+                        <a href="images/Cisticercoescolex10xp.jpg" class="fancybox" rel="ligthbox">Cisticerco Escolex W.M 40x</a>
+                        </span>
+                     </figure>
+                  </div>
+               </div>
+               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 thumb">
+                  <div class="service-box">
+                     <figure>
+                        <img  src="images/IntestineSchistosomiasis10xp.jpg" class="zoom img-fluid "  alt="">
+                        <span class="hoverle">
+                        <a href="images/IntestineSchistosomiasis10xp.jpg" class="fancybox" rel="ligthbox">Intestine Schistosomiasis 10x</a>
+                        </span> 
+                     </figure>
+                  </div>
+               </div>
+               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 thumb">
+                  <div class="service-box">
+                     <figure>
+                        <img  src="images/Schistossomojoponicum(male_female)4xp.jpg" class="zoom img-fluid "  alt="">
+                        <span class="hoverle">
+                        <a href="images/Schistossomojoponicum(male_female)4xp.jpg" class="fancybox" rel="ligthbox">Schistossomo joponicum (male&female) 4x</a>
+                        </span> 
+                     </figure>
+                  </div>
+               </div>
+               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 thumb">
+                  <div class="service-box">
+                     <figure>
+                        <img  src="images/Tuberculoid-TB10xp.jpg" class="zoom img-fluid "  alt="">
+                        <span class="hoverle">
+                        <a href="images/Tuberculoid-TB10xp.jpg" class="fancybox" rel="ligthbox">Tuberculoid -TB 10x</a>
+                        </span>
+                     </figure>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="read-more">
+         <a href="HomePageMicroscopia/index-mv.html">ACESSE AQUI</a>
+      </div>
+      <!-- end service -->
+      <!-- our blog -->
+      <div id="blog" class="blog">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2>Microscópio Óptico</h2>
+                     <span>
+                        O microscópio, uma palavra originada do grego "mikrós" e "skoppéoo", que significam 
+                        "pequeno" e "observar", é um instrumento óptico ou eletrônico que tem a capacidade de ampliar e visualizar 
+                        objetos ou estruturas que são demasiadamente pequenos para serem vistos a olho nu. Essa incrível ferramenta nos permite 
+                        uma análise minuciosa de amostras microscópicas, 
+                        revelando detalhes que seriam invisíveis sem a ampliação proporcionada pelo microscópio. 
+                        Ele é formado pelas seguintes estruturas:</span> 
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                  <div class="blog-box">
+                     <figure><img src="images/partesmicroedit.png" alt="#"/>
+                        <!--<span>10 August 2019</span>-->
+                     </figure>
+                     <h3>Partes Superiores</h3>
+                     <p>
+                     <b>Ocular:</b> A ocular, também conhecida como lente ocular, é a lente localizada na parte superior do canhão 
+                        do microscópio. É a lente que você olha diretamente através para visualizar a amostra ampliada. 
+                        As oculares geralmente têm uma ampliação de 10x. <br><br>
+
+                     <b>Canhão:</b> O canhão é a parte superior do microscópio onde estão localizadas as objetivas. Ele abriga as lentes
+                        objetivas e pode ser girado (em microscópios com múltiplas objetivas) para selecionar a objetiva desejada.
+                        <br><br>
+                        
+                        <b>Objetiva:</b> As lentes objetivas são a parte mais importante do sistema de ampliação. Elas estão localizadas no canhão e ampliam a imagem da amostra. Os microscópios têm várias objetivas 
+                        com diferentes ampliações, e você pode alternar entre elas para obter diferentes níveis de ampliação.
+                        <br><br>
+                     <b>Revólver:</b> O revólver é um mecanismo giratório localizado no canhão do microscópio. Ele permite que você gire e selecione facilmente diferentes 
+                        objetivas para obter diferentes níveis de ampliação sem ter que remover e substituir manualmente as lentes.
+                        <br><br>
+                     <b>Braço:</b> O braço é a parte superior do microscópio que se estende desde a base até a cabeça. 
+                        Ele é usado para segurar o microscópio e transportá-lo de um local para outro
+
+                    </p>
+                  </div>
+               </div>
+               <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                  <div class="blog-box">
+
+                     <h3>Partes Inferiores</h3>
+                     <p>
+                        <b>Base:</b> A base é a parte inferior do microscópio e serve como suporte estável para o instrumento. 
+                        Ela é responsável por manter o microscópio em posição enquanto você o utiliza.
+                        <br><br>
+                     <b>Fonte de Luz:</b> A fonte de luz é uma lâmpada localizada na base do microscópio. Ela emite luz que passa através da amostra que está sendo observada.
+                        Pode ser uma lâmpada incandescente ou LED, dependendo do modelo do microscópio.
+                        <br><br>
+                     <b>Diafragma:</b> O diafragma é uma abertura localizada logo abaixo da amostra. Ele controla a quantidade de luz que passa pela amostra, 
+                        ajustando-se para aumentar ou diminuir a intensidade da luz.
+                        <br><br>
+                        <b>Presilha:</b> A presilha, também conhecida como grampo ou suporte de amostra, é uma peça 
+                        localizada na plataforma da platina. Ela é usada para fixar a amostra no lugar, mantendo-a estável durante a observação.
+                        <br><br>
+                        <b>Parafuso Focalizador:</b> O parafuso focalizador é um mecanismo localizado no corpo do microscópio que permite ajustar a distância entre a objetiva (ou objetivas) 
+                        e a amostra. Ele é usado para focar a imagem, movendo a lente objetiva para cima ou para baixo.
+                        <br><br>
+                        <b>Platina:</b> A platina é uma plataforma plana localizada na parte superior da base. Ela é onde a amostra é colocada para observação. Geralmente, a platina pode ser movida 
+                        horizontalmente com os botões de ajuste para posicionar a amostra sob as lentes.
+                    </p>
+                  </div>
+               </div>
+         </div>
+      </div>
+      <!-- end our blog -->
+      <!-- Testimonial -->
+      
+      <!-- end Testimonial --> 
+      <!--  footer --> 
+      <footer>
+         <div class="footer">
+            <div class="container">
+               <div class="row">
+                  <div>
+                     <img src="images/logoifmenor.png">
+                     <img src="images/camile.png">
+                     <img src="images/emine.png">
+                     <img src="images/vitorias.png">
+                     <img src="images/raissa.png">
+
+                  </div>
+                  <div class="col-lg-2 col-md-6 col-sm-12 width">
+                     <div class="address">
+                        <h3>Orientadores:</h3>
+                        <i>Álvaro Hermano da Silva;</i>
+                           <br><i>Thayse Azevedo da Silva.</i>
+                     </div>
+                  </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="copyright">
+                  <p>© 2023 IFRN - Campus Parnamirim. </p>
+               </div>
+            </div>
+
+         </div>
+      </footer>
+      <!-- end footer -->
+      <!-- Javascript files--> 
+      <script src="js/jquery.min.js"></script> 
+      <script src="js/popper.min.js"></script> 
+      <script src="js/bootstrap.bundle.min.js"></script> 
+      <script src="js/jquery-3.0.0.min.js"></script> 
+      <script src="js/plugin.js"></script> 
+      <!-- sidebar --> 
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script> 
+      <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+      <script src="js/custom.js"></script>
+      <script>
+         $(document).ready(function(){
+         $(".fancybox").fancybox({
+         openEffect: "none",
+         closeEffect: "none"
+         });
+         
+         $(".zoom").hover(function(){
+         
+         $(this).addClass('transition');
+         }, function(){
+         
+         $(this).removeClass('transition');
+         });
+         });
+         
+      </script> 
+      <script>
+      //Aumentar e diminuir fonte
+
+         var $btnAumentar = $("#btnAumentar");
+         var $btnDiminuir = $("#btnDiminuir");
+         var $elemento = $("body").find("*"); //encontra todos os elementos dentro do #content
+         var fonts = [];
+         
+         function obterTamanhoFonte() {
+           for (var i = 0; i < $elemento.length; i++) {
+             fonts.push(parseFloat($elemento.eq(i).css('font-size')));
+           }
+         }
+         obterTamanhoFonte();
+         $btnAumentar.on('click', function() {
+           for (var i = 0; i < $elemento.length; i++) {
+             ++fonts[i];
+             $elemento.eq(i).css('font-size', fonts[i]);
+           }
+         });
+         
+         $btnDiminuir.on('click', function() {
+           for (var i = 0; i < $elemento.length; i++) {
+             --fonts[i];
+             $elemento.eq(i).css('font-size', fonts[i]);
+           }
+         });
+
+//Modo noturno
+const changeThemeBtn = document.querySelector("#change-theme");
+
+// Toggle dark mode
+function toggleDarkMode() {
+  document.body.classList.toggle("dark");
+}
+
+// Load light or dark mode
+function loadTheme() {
+  const darkMode = localStorage.getItem("dark");
+
+  if (darkMode) {
+    toggleDarkMode();
+  }
+}
+
+loadTheme();
+
+changeThemeBtn.addEventListener("change", function () {
+  toggleDarkMode();
+
+  // Save or remove dark mode from localStorage
+  localStorage.removeItem("dark");
+
+  if (document.body.classList.contains("dark")) {
+    localStorage.setItem("dark", 1);
+  }
+});
+
+         </script>
+
+   </body>
+</html>
