@@ -58,9 +58,13 @@
 .menu-area-main li:focus #btnDiminuir {
 	color: #000;
 }
-
-  
-  
+/*Legendas das imagens*/
+.legendaimagem p{
+	font-size: small;
+}  
+.blog .blog-box .legendaimagem p{
+	font-size: small;
+} 
   
 /* MODO NOTURNO */
 header {
@@ -1944,11 +1948,16 @@ img.zoom {
 	line-height: 46px;
 	border-bottom: #fc4311 solid 1px;
 	padding-bottom: 15px;
+	padding-bottom: 10px;
+  	color: #fc4311;
+  	font-weight: bold;
 }
 .about .about-box p {
-	font-size: 17px;
+	font-size: 16px;
 	line-height: 28px;
+	font-weight: normal;
 } 
+
 .about .about-img figure {
 	margin: 0;
 }
@@ -2012,12 +2021,12 @@ margin-bottom: 20px;
      margin-bottom: 0px;
      display: block;
      margin-bottom: 60px;
+	 text-align: justify;
 }
 
 .blog .blog-box {
     margin-bottom: 30px;
 } 
-
 
 .blog .blog-box figure {
      margin: 0px;
@@ -2036,11 +2045,13 @@ margin-bottom: 20px;
      line-height: 30px;
 	 color: #fc4311;
 }
+
 .blog .blog-box p {
      font-size: 16px;
      line-height: 30px;
 	 color:#202020;
-	 font-weight: 350
+	 font-weight: 350;
+	 text-align:justify
 }
 .blog .blog-box .travel {
      padding: 15px 0px;
